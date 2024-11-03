@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cash Register</h1>
+    <div class="input-div">
+        <p>Enter cash payment:</p>
+        <input type="number" id="cash">
+        <button id="purchase-btn">Purchase!</button>
+    </div>
+    <div class="register-container">
+        <div class="buttons">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+        </div>
+        <div class="info">
+            <div class="total-owed-container">
+                <p>Total:</p>
+                <p id="price"></p>
+            </div>
+            <div id="change-due"></div>
+            <div class="cid-container">
+                <p><strong>Change in drawer</strong></p>
+                <p>Pennies: <span id="penny-in-drawer"></span></p>
+                <p>Nickels: <span id="nickel-in-drawer"></span></p>
+                <p>Dimes: <span id="dime-in-drawer"></span></p>
+                <p>Quarters: <span id="quarter-in-drawer"></span></p>
+                <p>Ones: <span id="one-in-drawer"></span></p>
+                <p>Fives: <span id="five-in-drawer"></span></p>
+                <p>Tens: <span id="ten-in-drawer"></span></p>
+                <p>Twenties: <span id="twenty-in-drawer"></span></p>
+                <p>Hundreds: <span id="hundred-in-drawer"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
