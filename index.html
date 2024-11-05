@@ -7,44 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Cash Register</h1>
-    <div class="input-div">
-        <p>Enter cash payment:</p>
-        <input type="number" id="cash">
-        <button id="purchase-btn">Purchase!</button>
-    </div>
-    <div class="register-container">
-        <div class="buttons">
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-            <div class="button"></div>
-        </div>
-        <div class="info">
-            <div class="total-owed-container">
-                <p>Total:</p>
-                <p id="price"></p>
+    <main>
+        <h1>Cash Register Project</h1>
+        <div class="input-and-change">
+            <div class="input-div">
+                <label for="cash">Enter cash from customer</label>
+                <input type="number" id="cash">
+                <button id="purchase-btn">Purchase</button>
             </div>
             <div id="change-due"></div>
-            <div class="cid-container">
-                <p><strong>Change in drawer</strong></p>
-                <p>Pennies: <span id="penny-in-drawer"></span></p>
-                <p>Nickels: <span id="nickel-in-drawer"></span></p>
-                <p>Dimes: <span id="dime-in-drawer"></span></p>
-                <p>Quarters: <span id="quarter-in-drawer"></span></p>
-                <p>Ones: <span id="one-in-drawer"></span></p>
-                <p>Fives: <span id="five-in-drawer"></span></p>
-                <p>Tens: <span id="ten-in-drawer"></span></p>
-                <p>Twenties: <span id="twenty-in-drawer"></span></p>
-                <p>Hundreds: <span id="hundred-in-drawer"></span></p>
+        </div>
+        <div class="info">
+            <h2>Price: <span id="price"></span></h2>
+            <hr>
+            <div id="cid">
+                <h2>Cash in Drawer:</h2>
+                <p>Pennies: <span id="cid-penny"></span></p>
+                <p>Nickels: <span id="cid-nickel"></span></p>
+                <p>Dimes: <span id="cid-dime"></span></p>
+                <p>Quarters: <span id="cid-quarter"></span></p>
+                <p>Ones: <span id="cid-one"></span></p>
+                <p>Fives: <span id="cid-five"></span></p>
+                <p>Tens: <span id="cid-ten"></span></p>
+                <p>Twenties: <span id="cid-twenty"></span></p>
+                <p>Hundreds: <span id="cid-one-hundren"></span></p>
             </div>
         </div>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
